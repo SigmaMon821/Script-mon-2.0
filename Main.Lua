@@ -1,11 +1,5 @@
 -- [[ MonPhopuakMung HUB - FREE VERSION ]] --
 
-local statusURL = "https://gist.githubusercontent.com/samsung119980000-boop/6db0bee911261ffc68f668fb7934a692/raw/status.txt"
-local success, currentStatus = pcall(function() return game:HttpGet(statusURL) end)
-
-if success and currentStatus:find("OFF") then
-    return 
-end
 
 if game.CoreGui:FindFirstChild("FluentToggle") then game.CoreGui.FluentToggle:Destroy() end
 
